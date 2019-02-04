@@ -1,0 +1,15 @@
+{
+  "main.css": "/dev-toolkit-pwa/static/css/main.b04a139f.chunk.css",
+  "main.js": "/dev-toolkit-pwa/static/js/main.c548b823.chunk.js",
+  "main.js.map": "/dev-toolkit-pwa/static/js/main.c548b823.chunk.js.map",
+  "static/css/1.f1e6bc48.chunk.css": "/dev-toolkit-pwa/static/css/1.f1e6bc48.chunk.css",
+  "static/js/1.2d8be2ca.chunk.js": "/dev-toolkit-pwa/static/js/1.2d8be2ca.chunk.js",
+  "static/js/1.2d8be2ca.chunk.js.map": "/dev-toolkit-pwa/static/js/1.2d8be2ca.chunk.js.map",
+  "runtime~main.js": "/dev-toolkit-pwa/static/js/runtime~main.d85fc34f.js",
+  "runtime~main.js.map": "/dev-toolkit-pwa/static/js/runtime~main.d85fc34f.js.map",
+  "static/css/1.f1e6bc48.chunk.css.map": "/dev-toolkit-pwa/static/css/1.f1e6bc48.chunk.css.map",
+  "static/css/main.b04a139f.chunk.css.map": "/dev-toolkit-pwa/static/css/main.b04a139f.chunk.css.map",
+  "index.html": "/dev-toolkit-pwa/index.html",
+  "precache-manifest.d87312e92cba6b14449f19964dee41c1.js": "/dev-toolkit-pwa/precache-manifest.d87312e92cba6b14449f19964dee41c1.js",
+  "service-worker.js": "/dev-toolkit-pwa/service-worker.js"
+}
