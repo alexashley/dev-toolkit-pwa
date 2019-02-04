@@ -9,7 +9,7 @@ import XmlUtils from './tabs/XmlUtils';
 
 const App = () => {
     return (
-        <React.Fragment>
+        <div className="app">
             <TabGroup>
                 <Tab title="json">
                     <FormattedJson />
@@ -28,7 +28,8 @@ const App = () => {
                 </Tab>
             </TabGroup>
             <Footer />
-        </React.Fragment>
+        </div>
     );
 };
+
 export default App;
