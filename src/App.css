@@ -1,32 +1,112 @@
-.App {
-  text-align: center;
+:root {
+    --main-bg-color: #3c3f41;
+    --secondary-bg-color: #2b2b2b;
+    --text-color: #bababa;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    background-color: var(--main-bg-color);
 }
 
-.App-link {
-  color: #61dafb;
+pre {
+    margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tab-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-headers {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    width: 100%;
+}
+
+.tab-header {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    height: 50px;
+    width: 100%;
+}
+
+.tab-header:hover,
+.tab-header:focus {
+    text-decoration: none;
+    outline: var(--main-bg-color);
+}
+
+.active-tab-header {
+    background-color: var(--secondary-bg-color);
+}
+
+.tab-content {
+    height: 100%;
+    margin: 15px;
+    width: 100%;
+}
+
+.footer {
+    height: 50px;
+}
+
+.vertical-split-container {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 50%;
+}
+
+.column-title {
+    margin: 0;
+}
+
+.text-area {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    border: 1px solid black;
+    display: flex;
+    height: 900px;
+    padding: 0;
+    outline: var(--main-bg-color);
+    width: 100%;
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    color: orangered;
+    text-align: center;
+    height: 100%;
+}
+
+.copy-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin: 5px 0 5px 5px;
+    outline: var(--main-bg-color);
+    width: 30%;
 }

@@ -1,28 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import '../node_modules/highlight.js/styles/darcula.css';
 
-class App extends Component {
-  render() {
+import TabGroup, {Tab} from "./components/TabGroup";
+import Footer from "./components/Footer";
+import JsonPrettyPrint from "./components/Json";
+
+const App = () => {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <React.Fragment>
+            <TabGroup>
+                <Tab title="json">
+                    <JsonPrettyPrint/>
+                </Tab>
+                <Tab title="xml">
+                    <p>xml tab</p>
+                </Tab>
+                <Tab title="jwt">
+                    <p>jwt tab</p>
+                </Tab>
+                <Tab title="md">
+                    <p>md tab</p>
+                </Tab>
+                <Tab title="timer">
+                    <p>timer tab</p>
+                </Tab>
+            </TabGroup>
+            <Footer/>
+        </React.Fragment>
     );
-  }
-}
-
+};
 export default App;
