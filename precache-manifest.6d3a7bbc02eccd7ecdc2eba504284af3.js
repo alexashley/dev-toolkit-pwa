@@ -4,23 +4,23 @@ self.__precacheManifest = [
     "url": "/dev-toolkit-pwa/static/js/runtime~main.d85fc34f.js"
   },
   {
-    "revision": "cf9d8d511922960dbaa5",
-    "url": "/dev-toolkit-pwa/static/js/main.cf9d8d51.chunk.js"
+    "revision": "02ff0c83481b9fc39248",
+    "url": "/dev-toolkit-pwa/static/js/main.02ff0c83.chunk.js"
   },
   {
     "revision": "2d8be2ca2ca4937f4214",
     "url": "/dev-toolkit-pwa/static/js/1.2d8be2ca.chunk.js"
   },
   {
-    "revision": "cf9d8d511922960dbaa5",
-    "url": "/dev-toolkit-pwa/static/css/main.09263085.chunk.css"
+    "revision": "02ff0c83481b9fc39248",
+    "url": "/dev-toolkit-pwa/static/css/main.80794890.chunk.css"
   },
   {
     "revision": "2d8be2ca2ca4937f4214",
     "url": "/dev-toolkit-pwa/static/css/1.f1e6bc48.chunk.css"
   },
   {
-    "revision": "ba2b609bc92e801dc7be4394f2dc221d",
+    "revision": "8ac6505e17f1c6179ab3cd03a7725ac3",
     "url": "/dev-toolkit-pwa/index.html"
   }
 ];

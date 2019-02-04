@@ -1,15 +1,15 @@
 {
-  "main.css": "/dev-toolkit-pwa/static/css/main.09263085.chunk.css",
-  "main.js": "/dev-toolkit-pwa/static/js/main.cf9d8d51.chunk.js",
-  "main.js.map": "/dev-toolkit-pwa/static/js/main.cf9d8d51.chunk.js.map",
+  "main.css": "/dev-toolkit-pwa/static/css/main.80794890.chunk.css",
+  "main.js": "/dev-toolkit-pwa/static/js/main.02ff0c83.chunk.js",
+  "main.js.map": "/dev-toolkit-pwa/static/js/main.02ff0c83.chunk.js.map",
   "static/css/1.f1e6bc48.chunk.css": "/dev-toolkit-pwa/static/css/1.f1e6bc48.chunk.css",
   "static/js/1.2d8be2ca.chunk.js": "/dev-toolkit-pwa/static/js/1.2d8be2ca.chunk.js",
   "static/js/1.2d8be2ca.chunk.js.map": "/dev-toolkit-pwa/static/js/1.2d8be2ca.chunk.js.map",
   "runtime~main.js": "/dev-toolkit-pwa/static/js/runtime~main.d85fc34f.js",
   "runtime~main.js.map": "/dev-toolkit-pwa/static/js/runtime~main.d85fc34f.js.map",
   "static/css/1.f1e6bc48.chunk.css.map": "/dev-toolkit-pwa/static/css/1.f1e6bc48.chunk.css.map",
-  "static/css/main.09263085.chunk.css.map": "/dev-toolkit-pwa/static/css/main.09263085.chunk.css.map",
+  "static/css/main.80794890.chunk.css.map": "/dev-toolkit-pwa/static/css/main.80794890.chunk.css.map",
   "index.html": "/dev-toolkit-pwa/index.html",
-  "precache-manifest.6ba582476f5b73541aad926922d78d96.js": "/dev-toolkit-pwa/precache-manifest.6ba582476f5b73541aad926922d78d96.js",
+  "precache-manifest.6d3a7bbc02eccd7ecdc2eba504284af3.js": "/dev-toolkit-pwa/precache-manifest.6d3a7bbc02eccd7ecdc2eba504284af3.js",
   "service-worker.js": "/dev-toolkit-pwa/service-worker.js"
 }
