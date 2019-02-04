@@ -168,7 +168,7 @@ const XmlFormat = () => {
 
     return (
         <VerticalSplit>
-            <Column title="Input">
+            <Column>
                 <CopyMe>
                     <textarea
                         className="text-area"
@@ -177,7 +177,7 @@ const XmlFormat = () => {
                     />
                 </CopyMe>
             </Column>
-            <Column title="Formatted">
+            <Column>
                 {error ? (
                     <Error message="Invalid XML" />
                 ) : (
@@ -195,7 +195,7 @@ const XmlEscape = () => {
 
     return (
         <VerticalSplit>
-            <Column title="Input">
+            <Column>
                 <CopyMe>
                     <textarea
                         className="text-area"
@@ -204,7 +204,7 @@ const XmlEscape = () => {
                     />
                 </CopyMe>
             </Column>
-            <Column title="Escaped">
+            <Column>
                 <Highlight lang="xml">{escaped}</Highlight>
             </Column>
         </VerticalSplit>
@@ -219,7 +219,7 @@ const XmlUnescape = () => {
 
     return (
         <VerticalSplit>
-            <Column title="Input">
+            <Column>
                 <CopyMe>
                     <textarea
                         className="text-area"
@@ -228,7 +228,7 @@ const XmlUnescape = () => {
                     />
                 </CopyMe>
             </Column>
-            <Column title="Unescaped">
+            <Column>
                 {error ? (
                     <Error message="Invalid XML" />
                 ) : (

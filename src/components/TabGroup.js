@@ -32,6 +32,8 @@ const TabGroup = props => {
 
         if (index !== tabIndex) {
             classes.push('hidden-tab');
+        } else {
+            classes.push('active-tab');
         }
 
         return <section className={classes.join(' ')}>{child}</section>;

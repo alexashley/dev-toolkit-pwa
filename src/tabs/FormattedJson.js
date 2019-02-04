@@ -27,7 +27,7 @@ const FormattedJson = () => {
 
     return (
         <VerticalSplit>
-            <Column title="Input">
+            <Column>
                 <CopyMe>
                     <textarea
                         className="text-area"
@@ -36,7 +36,7 @@ const FormattedJson = () => {
                     />
                 </CopyMe>
             </Column>
-            <Column title="Formatted">
+            <Column>
                 {error ? (
                     <Error message="Invalid JSON" />
                 ) : (
