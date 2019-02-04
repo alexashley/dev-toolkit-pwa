@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from 'react';
 
-import {VerticalSplit, Column} from "../components/Layout";
+import { VerticalSplit, Column } from '../components/Layout';
 import Error from '../components/Error';
 import Highlight from '../components/Highlight';
 import CopyMe from '../components/CopyMe';
 
-const prettyPrint = (content) => {
+const prettyPrint = content => {
     let pretty = '';
     let parseError = false;
 
@@ -17,13 +17,13 @@ const prettyPrint = (content) => {
 
     return {
         pretty,
-        error: parseError
+        error: parseError,
     };
 };
 
 const FormattedJson = () => {
     const [rawJson, setRawJson] = useState('{"a": "b", "c": [1, 2, 3]}');
-    const {pretty, error} = prettyPrint(rawJson);
+    const { pretty, error } = prettyPrint(rawJson);
 
     return (
         <VerticalSplit>
@@ -32,18 +32,16 @@ const FormattedJson = () => {
                     <textarea
                         className="text-area"
                         value={rawJson}
-                        onChange={(event) => setRawJson(event.target.value)}
+                        onChange={event => setRawJson(event.target.value)}
                     />
                 </CopyMe>
             </Column>
             <Column title="Formatted">
-                {error ?
-                    <Error message="Invalid JSON"/>
-                    :
-                    <Highlight lang='json'>
-                        {pretty}
-                    </Highlight>
-                }
+                {error ? (
+                    <Error message="Invalid JSON" />
+                ) : (
+                    <Highlight lang="json">{pretty}</Highlight>
+                )}
             </Column>
         </VerticalSplit>
     );

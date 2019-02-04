@@ -2,16 +2,16 @@ import React from 'react';
 import './App.css';
 import '../node_modules/highlight.js/styles/darcula.css';
 
-import TabGroup, {Tab} from "./components/TabGroup";
-import Footer from "./components/Footer";
-import FormattedJson from "./tabs/FormattedJson";
+import TabGroup, { Tab } from './components/TabGroup';
+import Footer from './components/Footer';
+import FormattedJson from './tabs/FormattedJson';
 
 const App = () => {
     return (
         <React.Fragment>
             <TabGroup>
                 <Tab title="json">
-                    <FormattedJson/>
+                    <FormattedJson />
                 </Tab>
                 <Tab title="xml">
                     <p>xml tab</p>
@@ -26,7 +26,7 @@ const App = () => {
                     <p>timer tab</p>
                 </Tab>
             </TabGroup>
-            <Footer/>
+            <Footer />
         </React.Fragment>
     );
 };

@@ -1,9 +1,9 @@
-import React, {useRef, useEffect} from 'react';
+import React, { useRef, useEffect } from 'react';
 import highlight from 'highlight.js';
 
 import CopyMe from './CopyMe';
 
-const Highlight = ({children, lang}) => {
+const Highlight = ({ children, lang }) => {
     const codeRef = useRef(null);
 
     useEffect(() => {
@@ -13,7 +13,9 @@ const Highlight = ({children, lang}) => {
     return (
         <CopyMe>
             <pre>
-                <code ref={codeRef} className={lang}>{children}</code>
+                <code ref={codeRef} className={lang}>
+                    {children}
+                </code>
             </pre>
         </CopyMe>
     );
