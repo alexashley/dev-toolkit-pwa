@@ -5,6 +5,7 @@ import '../node_modules/highlight.js/styles/darcula.css';
 import TabGroup, { Tab } from './components/TabGroup';
 import Footer from './components/Footer';
 import FormattedJson from './tabs/FormattedJson';
+import XmlUtils from './tabs/XmlUtils';
 
 const App = () => {
     return (
@@ -14,7 +15,7 @@ const App = () => {
                     <FormattedJson />
                 </Tab>
                 <Tab title="xml">
-                    <p>xml tab</p>
+                    <XmlUtils />
                 </Tab>
                 <Tab title="jwt">
                     <p>jwt tab</p>
