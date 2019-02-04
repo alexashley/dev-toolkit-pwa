@@ -12,7 +12,9 @@
     },
     "scripts": {
         "start": "VERSION=$(git rev-parse --short HEAD) react-scripts start",
-        "build": "react-scripts build",
+        "build": "VERSION=$(git rev-parse --short HEAD) react-scripts build",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
@@ -26,6 +28,7 @@
         "not op_mini all"
     ],
     "devDependencies": {
+        "gh-pages": "2.0.1",
         "husky": "1.3.1",
         "lint-staged": "8.1.3",
         "prettier": "1.16.4"
@@ -40,5 +43,6 @@
             "prettier --write",
             "git add"
         ]
-    }
+    },
+    "homepage": "https://alexashley.github.io/dev-toolkit-pwa/"
 }
