@@ -82,6 +82,10 @@ a {
     width: 100%;
 }
 
+.hidden-tab {
+    display: none;
+}
+
 .footer {
     display: flex;
     align-content: flex-start;

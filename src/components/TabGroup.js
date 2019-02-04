@@ -27,12 +27,20 @@ const TabGroup = props => {
 
         return <TabHeader {...childProps} />;
     });
-    const currentTab = React.Children.toArray(props.children)[tabIndex];
+    const tabs = React.Children.map(props.children, (child, index) => {
+        const classes = ['tab-content'];
+
+        if (index !== tabIndex) {
+            classes.push('hidden-tab');
+        }
+
+        return <section className={classes.join(' ')}>{child}</section>;
+    });
 
     return (
         <div className="tab-group">
             <nav className="tab-headers">{tabHeaders}</nav>
-            <section className="tab-content">{currentTab}</section>
+            {tabs}
         </div>
     );
 };
