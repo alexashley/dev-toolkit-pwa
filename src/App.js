@@ -4,14 +4,14 @@ import '../node_modules/highlight.js/styles/darcula.css';
 
 import TabGroup, {Tab} from "./components/TabGroup";
 import Footer from "./components/Footer";
-import JsonPrettyPrint from "./components/Json";
+import FormattedJson from "./tabs/FormattedJson";
 
 const App = () => {
     return (
         <React.Fragment>
             <TabGroup>
                 <Tab title="json">
-                    <JsonPrettyPrint/>
+                    <FormattedJson/>
                 </Tab>
                 <Tab title="xml">
                     <p>xml tab</p>
