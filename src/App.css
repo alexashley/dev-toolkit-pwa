@@ -107,6 +107,7 @@ pre {
 .column {
     min-height: 100px;
     max-width: 100%;
+    height: 1000px;
     width: 50%;
 }
 
@@ -114,7 +115,7 @@ pre {
     background-color: var(--main-bg-color);
     margin-top: 8px;
     color: var(--text-color);
-    height: 70%;
+    height: 90%;
     min-height: 100px;
     box-sizing: border-box;
     width: 100%;
@@ -148,4 +149,8 @@ pre {
     justify-self: flex-end;
     margin-top: 10px;
     justify-content: flex-start;
+}
+
+pre {
+    height: 90%;
 }
