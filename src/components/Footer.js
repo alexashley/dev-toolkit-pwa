@@ -44,7 +44,13 @@ const Footer = () => {
                     </ul>
                 </div>
             </nav>
-            <span>{`version: ${process.env.REACT_APP_VERSION}`}</span>
+            <Link
+                href={`https://github.com/alexashley/dev-toolkit-pwa/commit/${
+                    process.env.REACT_APP_VERSION
+                }`}
+            >
+                {`version: ${process.env.REACT_APP_VERSION.slice(0, 7)}`}
+            </Link>
         </footer>
     );
 };

@@ -12,7 +12,7 @@ const Highlight = ({ children, lang }) => {
 
     return (
         <CopyMe>
-            <pre>
+            <pre className={'highlight'}>
                 <code ref={codeRef} className={lang}>
                     {children}
                 </code>

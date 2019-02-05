@@ -11,8 +11,8 @@
         "xml2js": "0.4.19"
     },
     "scripts": {
-        "start": "VERSION=$(git rev-parse --short HEAD) react-scripts start",
-        "build": "VERSION=$(git rev-parse --short HEAD) react-scripts build",
+        "start": "VERSION=$(git rev-parse HEAD) react-scripts start",
+        "build": "VERSION=$(git rev-parse HEAD) react-scripts build",
         "predeploy": "yarn build",
         "deploy": "gh-pages -d build",
         "test": "react-scripts test",
