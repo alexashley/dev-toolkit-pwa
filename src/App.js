@@ -5,7 +5,9 @@ import '../node_modules/highlight.js/styles/darcula.css';
 import TabGroup, { Tab } from './components/TabGroup';
 import Footer from './components/Footer';
 import FormattedJson from './tabs/FormattedJson';
-import XmlUtils from './tabs/XmlUtils';
+import FormattedXml from './tabs/FormattedXml';
+import EscapeXml from './tabs/EscapeXml';
+import UnescapeXml from './tabs/UnescapeXml';
 
 const App = () => {
     return (
@@ -15,10 +17,19 @@ const App = () => {
                     <FormattedJson />
                 </Tab>
                 <Tab title="xml">
-                    <XmlUtils />
+                    <FormattedXml />
                 </Tab>
-                <Tab title="jwt">
+                <Tab title="escape xml">
+                    <EscapeXml />
+                </Tab>
+                <Tab title="unescape xml">
+                    <UnescapeXml />
+                </Tab>
+                <Tab title="jwt encode">
                     <p>jwt tab</p>
+                </Tab>
+                <Tab title="jwt decode">
+                    <FormattedXml />
                 </Tab>
                 <Tab title="md">
                     <p>md tab</p>
