@@ -14,9 +14,11 @@ const TabHeader = ({ title, changeTab, isSelected }) => {
     );
 };
 
-export const Tab = props => <section className="tab">{props.children}</section>;
+export const Tab = (props) => (
+    <section className="tab">{props.children}</section>
+);
 
-const TabGroup = props => {
+const TabGroup = (props) => {
     const [tabIndex, setTabIndex] = useState(0);
     const tabHeaders = React.Children.map(props.children, (child, index) => {
         const childProps = {

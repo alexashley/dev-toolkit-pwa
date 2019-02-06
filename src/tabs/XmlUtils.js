@@ -16,7 +16,7 @@ const parser = new xml2js.Parser({
     attrkey: '__attributes',
 });
 
-const prettyPrint = xml => {
+const prettyPrint = (xml) => {
     let pretty, error;
 
     parser.parseString(xml, (err, data) => {
@@ -41,7 +41,7 @@ const escapeCharacters = {
     "'": '&apos;',
 };
 
-const xmlEscape = xml => {
+const xmlEscape = (xml) => {
     let escaped = xml;
 
     Object.entries(escapeCharacters).forEach(([char, escapedVersion]) => {
@@ -51,7 +51,7 @@ const xmlEscape = xml => {
     return escaped;
 };
 
-const xmlUnescape = xml => {
+const xmlUnescape = (xml) => {
     let unescaped = xml;
 
     Object.entries(escapeCharacters).forEach(([char, escapedVersion]) => {
@@ -173,7 +173,7 @@ const XmlFormat = () => {
                     <textarea
                         className="text-area"
                         value={rawXml}
-                        onChange={event => setRawXml(event.target.value)}
+                        onChange={(event) => setRawXml(event.target.value)}
                     />
                 </CopyMe>
             </Column>
@@ -200,7 +200,7 @@ const XmlEscape = () => {
                     <textarea
                         className="text-area"
                         value={rawXml}
-                        onChange={event => setRawXml(event.target.value)}
+                        onChange={(event) => setRawXml(event.target.value)}
                     />
                 </CopyMe>
             </Column>
@@ -224,7 +224,7 @@ const XmlUnescape = () => {
                     <textarea
                         className="text-area"
                         value={rawXml}
-                        onChange={event => setRawXml(event.target.value)}
+                        onChange={(event) => setRawXml(event.target.value)}
                     />
                 </CopyMe>
             </Column>

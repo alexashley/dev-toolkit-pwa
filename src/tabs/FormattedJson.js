@@ -5,7 +5,7 @@ import Error from '../components/Error';
 import Highlight from '../components/Highlight';
 import CopyMe from '../components/CopyMe';
 
-const prettyPrint = content => {
+const prettyPrint = (content) => {
     let pretty = '';
     let parseError = false;
 
@@ -32,7 +32,7 @@ const FormattedJson = () => {
                     <textarea
                         className="text-area"
                         value={rawJson}
-                        onChange={event => setRawJson(event.target.value)}
+                        onChange={(event) => setRawJson(event.target.value)}
                     />
                 </CopyMe>
             </Column>
