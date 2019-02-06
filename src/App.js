@@ -8,6 +8,7 @@ import FormattedJson from './tabs/FormattedJson';
 import FormattedXml from './tabs/FormattedXml';
 import EscapeXml from './tabs/EscapeXml';
 import UnescapeXml from './tabs/UnescapeXml';
+import JwtDecode from './tabs/JwtDecode';
 
 const App = () => {
     return (
@@ -25,11 +26,11 @@ const App = () => {
                 <Tab title="unescape xml">
                     <UnescapeXml />
                 </Tab>
+                <Tab title="jwt decode">
+                    <JwtDecode />
+                </Tab>
                 <Tab title="jwt encode">
                     <p>jwt tab</p>
-                </Tab>
-                <Tab title="jwt decode">
-                    <FormattedXml />
                 </Tab>
                 <Tab title="md">
                     <p>md tab</p>

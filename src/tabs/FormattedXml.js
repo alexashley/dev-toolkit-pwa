@@ -102,58 +102,6 @@ const defaultXml = `
 </wsdl:service>
 </wsdl:definitions>`;
 
-//
-// const xmlEscapeDefault = `<wsdl:message name="ICalculator_Add_InputMessage"><wsdl:part name="parameters" element="tns:Add" /></wsdl:message>`;
-// const XmlEscape = () => {
-//     const [rawXml, setRawXml] = useState(xmlEscapeDefault);
-//     const escaped = xmlEscape(rawXml);
-//
-//     return (
-//         <VerticalSplit>
-//             <Column>
-//                 <CopyMe>
-//                     <textarea
-//                         className="text-area"
-//                         value={rawXml}
-//                         onChange={(event) => setRawXml(event.target.value)}
-//                     />
-//                 </CopyMe>
-//             </Column>
-//             <Column>
-//                 <Highlight lang="xml">{escaped}</Highlight>
-//             </Column>
-//         </VerticalSplit>
-//     );
-// };
-//
-// const unescapeXmlDefault =
-//     '&lt;wsdl:message name=&quot;ICalculator_Add_InputMessage&quot;&gt;&lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:Add&quot; /&gt;&lt;/wsdl:message&gt;';
-// const XmlUnescape = () => {
-//     const [rawXml, setRawXml] = useState(unescapeXmlDefault);
-//     const {pretty, error} = xmlUnescape(rawXml);
-//
-//     return (
-//         <VerticalSplit>
-//             <Column>
-//                 <CopyMe>
-//                     <textarea
-//                         className="text-area"
-//                         value={rawXml}
-//                         onChange={(event) => setRawXml(event.target.value)}
-//                     />
-//                 </CopyMe>
-//             </Column>
-//             <Column>
-//                 {error ? (
-//                     <Error message="Invalid XML"/>
-//                 ) : (
-//                     <Highlight lang="xml">{pretty}</Highlight>
-//                 )}
-//             </Column>
-//         </VerticalSplit>
-//     );
-// };
-
 const FormattedXml = () => {
     const [rawXml, setRawXml] = useState(defaultXml);
 

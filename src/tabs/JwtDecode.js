@@ -1,64 +1,29 @@
 import React, { useState } from 'react';
 
-import { VerticalSplit, Column } from '../components/Layout';
-import Error from '../components/Error';
-import Highlight from '../components/Highlight';
-import CopyMe from '../components/CopyMe';
-import TabGroup, { Tab } from '../components/TabGroup';
+import InputPreviewPane from '../components/InputPreviewPane';
+import * as jwt from '../util/jwt';
+import * as format from '../util/format';
 
-const prettyPrint = (content) => {
-    let pretty = '';
-    let parseError = false;
+const defaultInput =
+    'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.TCYt5XsITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUcX16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtjPAYuNzVBAh4vGHSrQyHUdBBPM';
 
-    try {
-        pretty = JSON.stringify(JSON.parse(content), null, 4);
-    } catch (error) {
-        parseError = error.message;
-    }
+const transform = (input) => {
+    const claims = jwt.decode(input);
 
-    return {
-        pretty,
-        error: parseError,
-    };
+    return format.json(claims);
 };
 
 const JwtDecode = () => {
-    const [rawJson, setRawJson] = useState('{"a": "b", "c": [1, 2, 3]}');
-    const { pretty, error } = prettyPrint(rawJson);
+    const [rawJwt, setRawJwt] = useState(defaultInput);
 
     return (
-        <VerticalSplit>
-            <Column>
-                <CopyMe>
-                    <textarea
-                        className="text-area"
-                        value={rawJson}
-                        onChange={(event) => setRawJson(event.target.value)}
-                    />
-                </CopyMe>
-            </Column>
-            <Column>
-                {error ? (
-                    <Error message="Invalid JSON" />
-                ) : (
-                    <Highlight lang="json">{pretty}</Highlight>
-                )}
-            </Column>
-        </VerticalSplit>
+        <InputPreviewPane
+            lang={'json'}
+            transform={transform}
+            rawValue={rawJwt}
+            setRawValue={setRawJwt}
+        />
     );
 };
 
-const JwtTab = () => {
-    return (
-        <TabGroup>
-            <Tab title="decode">
-                <XmlFormat />
-            </Tab>
-            <Tab title="encode">
-                <XmlEscape />
-            </Tab>
-        </TabGroup>
-    );
-};
-
-export default JwtTab;
+export default JwtDecode;

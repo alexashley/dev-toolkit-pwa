@@ -4,13 +4,14 @@ import React, { useState } from 'react';
 
 const defaultInput = `<wsdl:message name="ICalculator_Add_InputMessage"><wsdl:part name="parameters" element="tns:Add" /></wsdl:message>`;
 
+const transform = (input) => {
+    return {
+        formatted: xml.escape(input),
+    };
+};
+
 const XmlEscape = () => {
     const [rawXml, setRawXml] = useState(defaultInput);
-    const transform = (input) => {
-        return {
-            formatted: xml.escape(input),
-        };
-    };
 
     return (
         <InputPreviewPane

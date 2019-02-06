@@ -1,5 +1,3 @@
-import * as format from './format';
-
 const escapeCharacters = {
     '&': '&amp;',
     '<': '&lt;',
@@ -25,5 +23,5 @@ export const unescape = (xml) => {
         unescaped = unescaped.replace(new RegExp(escapedVersion, 'g'), char);
     });
 
-    return format.xml(unescaped);
+    return unescaped;
 };
