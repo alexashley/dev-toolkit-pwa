@@ -36,7 +36,7 @@ const prettyPrint = xml => {
 const escapeCharacters = {
     '&': '&amp;',
     '<': '&lt;',
-    '>': 'gt;',
+    '>': '&gt;',
     '"': '&quot;',
     "'": '&apos;',
 };
@@ -212,7 +212,7 @@ const XmlEscape = () => {
 };
 
 const unescapeXmlDefault =
-    '&lt;wsdl:message name=&quot;ICalculator_Add_InputMessage&quot;gt;&lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:Add&quot; /gt;&lt;/wsdl:messagegt;';
+    '&lt;wsdl:message name=&quot;ICalculator_Add_InputMessage&quot;&gt;&lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:Add&quot; /&gt;&lt;/wsdl:message&gt;';
 const XmlUnescape = () => {
     const [rawXml, setRawXml] = useState(unescapeXmlDefault);
     const { pretty, error } = xmlUnescape(rawXml);
